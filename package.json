@@ -1,0 +1,29 @@
+{
+  "name": "week4-BCLN-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAC20/week4-BCLN-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAC20/week4-BCLN-project/issues"
+  },
+  "homepage": "https://github.com/FAC20/week4-BCLN-project#readme",
+  "dependencies": {
+    "http": "0.0.1-security"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2",
+    "tape": "^5.0.1",
+    "tap-spec": "^5.0.0"
+  }
+}
