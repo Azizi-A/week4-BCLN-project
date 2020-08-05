@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Document</title>
+    <title>Once upon a time</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>Once upon a time...</h1>
+    </header>
+    <main>
+      <section class="blog">
+    
+        
+      </section>
+      <form action="">
+        <fieldset>
+          <legend> What's the next line ? </legend>
+        <label for="thoughts">I think...</label>
+        <input type="text" id="thoughts">
+        <label for="author">by:</label>
+        <input type="text" id="author">
+        <button type="submit">submit</button>
+      </fieldset>
+      </form>
+    </main>
     <footer></footer>
-    <script src="scripts.js"></script>
+    <template>
+      <article class="blogItem">
+        <p class="blogThought"> I think that the chicken crossed the road ... </p>
+        <p class="blogAuthor">By: Amber</p>
+        <button type="button" class="deleteButton"></button>
+      </article>
+    </template>
   </body>
 </html>
