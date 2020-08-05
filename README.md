@@ -14,3 +14,4 @@ Amber - Facilitator
 - no working after 6 
 - take 5 minutes in the day to think about our roles and what needs to be achieved 
 - make sure everyone understands all of the code
+- commit more frequently 
