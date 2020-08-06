@@ -1,3 +1,4 @@
+const path = require("path");
 const home = require(path.join(__dirname, "handlers", "home"));
 const submit = require(path.join(__dirname, "handlers", "submit"));
 const missing = require(path.join(__dirname, "handlers", "missing"));
