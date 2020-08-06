@@ -15,10 +15,9 @@ function submit(request, response) {
         //place thought value in thought tag
 
         //place author
-      response.writeHead(200, { "content-type": "text/html" });
-      response.end(
-          //send back index.html
-
-        );
+      response.writeHead(200, { "content-type": "application/json" });
+      response.end(JSON.stringify(body));
     });
   }
+
+  module.exports = submit;
