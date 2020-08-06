@@ -12,6 +12,7 @@ test("Check that home handler works correctly", t => {
       t.match(response.text, /<!DOCTYPE html>/); 
       t.end();
     });
+  });
 
 test("Initialise", t => {
     let num = 2;
@@ -21,8 +22,8 @@ test("Initialise", t => {
 
 
 test("Sending a thought and name to /submit", t => {
-    const body = {"thought" : "Once there was a little boy",
-                    "name" : "Jihyun"};
+    const body = {thought : "Once there was a little boy",
+                    author : "Jihyun"};
     supertest(router)
         .post("/submit")
         .set({"Microblog": "post"})
@@ -33,7 +34,25 @@ test("Sending a thought and name to /submit", t => {
             t.error(err);
             console.log("body in test: ", body);
             t.equal(body.thought, "Once there was a little boy");
-            t.equal(body.name, "Jihyun");
+            t.equal(body.author, "Jihyun");
             t.end();
         });
+});
+
+test("Sending a thought and name to /submit", t => {
+  const body = {thought : "Once there was a girl",
+                  author : "Jennifer"};
+  supertest(router)
+      .post("/submit")
+      .set({"Microblog": "post"})
+      .send(body)
+      .expect(200)
+      .expect("content-type" , "application/json")
+      .end((err, res) => {
+          t.error(err);
+          console.log("body in test: ", body);
+          t.equal(body.thought, "Once there was a girl");
+          t.equal(body.author, "Jennifer");
+          t.end();
+      });
 });
