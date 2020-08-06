@@ -4,7 +4,7 @@
   "description": "",
   "main": "router.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node tests.js",
     "start": "node server.js"
   },
   "repository": {
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "supertest": "^4.0.2",
-    "tape": "^5.0.1",
-    "tap-spec": "^5.0.0"
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
   }
 }
