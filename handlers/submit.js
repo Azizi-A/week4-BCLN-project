@@ -13,10 +13,10 @@ function submit(request, response) {
     request.on("end", () => {
       body  = JSON.parse(body);
       array.push(body);
-      array = JSON.parse(array)
-      console.log(array);
-      console.log("line 13", body, typeof body); // we should have the whole request body now
-      console.log("thought: ", body.thought, "author: ", body.author);
+      array = JSON.parse(array);
+      // console.log(array);
+      // console.log("line 13", body, typeof body); // we should have the whole request body now
+      // console.log("thought: ", body.thought, "author: ", body.author);
 
         // select template 
         // let template = document.querySelector(".template__article"); 
@@ -46,8 +46,8 @@ function submit(request, response) {
         //place thought value in thought tag
         
         //place author
-      response.writeHead(200, { "content-type": "application/json" });
-      response.end(array);
+      response.writeHead(302, { location: "/" });
+      response.end();
     });
   }
 
