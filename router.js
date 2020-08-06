@@ -10,7 +10,7 @@ const router = (request, response) => {
 
   //if url is home and method is get,
   if (url === "/") {
-    //serve homepage
+    //  serve homepage
     home(request, response);
     //if url is submit and method is post,
   } else if (url === "/submit" && method === "POST") {
