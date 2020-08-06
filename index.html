@@ -12,28 +12,26 @@
       <h1>Once upon a time...</h1>
     </header>
     <main>
-      <section class="blog">
-    
-        
-      </section>
+      <section class="blog"></section>
       <form action="">
         <fieldset>
-          <legend> What's the next line ? </legend>
-        <label for="thoughts">I think...</label>
-        <input type="text" id="thoughts">
-        <label for="author">by:</label>
-        <input type="text" id="author">
-        <button type="submit">submit</button>
-      </fieldset>
+          <legend>What's the next line ?</legend>
+          <label for="thoughts">I think...</label>
+          <input type="text" id="thoughts" class="form__input-thought" />
+          <label for="author">by:</label>
+          <input type="text" id="author" class="form__input-author" />
+          <button type="submit" class="form__button-submit">submit</button>
+        </fieldset>
       </form>
     </main>
     <footer></footer>
     <template>
-      <article class="blogItem">
-        <p class="blogThought">  </p>
-        <p class="blogAuthor"> </p>
-        <button type="button" class="deleteButton"></button>
+      <article class="template__article">
+        <p class="template__article-thought"></p>
+        <p class="template__article-author"></p>
+        <button type="button" class="template__button-delete"></button>
       </article>
     </template>
   </body>
+  <script src="script.js"></script>
 </html>
