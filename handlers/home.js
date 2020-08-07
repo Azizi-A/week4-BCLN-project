@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const array = require("./array");
 
 const home = (request, response) => {
   const filePath = path.join(__dirname, "..", "public", "index.html");
