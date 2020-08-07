@@ -15,3 +15,12 @@ Amber - Facilitator
 - take 5 minutes in the day to think about our roles and what needs to be achieved 
 - make sure everyone understands all of the code
 - commit more frequently 
+
+# Acceptance criteria
+- [ ] A page with a form to submit posts, and a page showing all posts
+- [ ] All static assets served correctly (CSS etc)
+- [ ] Tests for each server route
+- [ ] A responsive, mobile-first design
+- [ ] Ensure your app is accessible to as many different users as possible
+
+
