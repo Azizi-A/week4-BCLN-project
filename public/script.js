@@ -37,13 +37,10 @@ fetch("/get-post")
 
 submitBtn.addEventListener("click", event => {
   event.preventDefault();
-  // url = "/submit";
-  // console.log(url);
   // arrange form inputs into object
   const data = {};
   data.thought = inputThought.value;
   data.author = inputAuthor.value;
-  console.log(data);
 
   // send post request
   fetch("/submit", {
@@ -52,5 +49,7 @@ submitBtn.addEventListener("click", event => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  });
+  })
+    .then(location.reload())
+    .catch(err => console.error(err));
 });
