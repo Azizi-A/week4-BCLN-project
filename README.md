@@ -18,6 +18,10 @@ devDependencies
    - tap-spec,
    - tape
 
+To start the server, run `npm start` in your terminal, then click the link 
+If you would like to run the tests, run `npm test` in your terminal.
+
+
 ## Tools used :wrench:
 - Figma
 - crazy 8s methodology
