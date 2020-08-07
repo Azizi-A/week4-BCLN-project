@@ -8,7 +8,15 @@ Jennifer - User/design </br>
 Amber - Facilitator
 
 # Installing the dependencies 
-After downloading the repo run npm install in your termninal to install all the necessary dependencies. 
+After cloning this repository run `npm install` in your termninal to install all the necessary dependencies. These include: 
+
+dependencies: 
+   - http
+
+devDependencies
+   - supertest
+   - tap-spec,
+   - tape
 
 ## Tools used :wrench:
 - Figma
@@ -26,9 +34,9 @@ After downloading the repo run npm install in your termninal to install all the 
 - commit more frequently 
 
 # Acceptance criteria
-- [ ] A page with a form to submit posts, and a page showing all posts
-- [ ] All static assets served correctly (CSS etc)
-- [ ] Tests for each server route
+- [x] A page with a form to submit posts, and a page showing all posts
+- [x] All static assets served correctly (CSS etc)
+- [x] Tests for each server route
 - [ ] A responsive, mobile-first design
 - [ ] Ensure your app is accessible to as many different users as possible
 
