@@ -49,5 +49,7 @@ submitBtn.addEventListener("click", event => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  }).catch(err => console.error(err));
+  })
+    .then(location.reload())
+    .catch(err => console.error(err));
 });
