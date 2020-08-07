@@ -1,6 +1,6 @@
 function missing(request, response) {
-    response.writeHead(404, { "content-type" : "text/html"});
-    response.end("<h1>NOt found</h1>");
+  response.writeHead(404, { "content-type": "text/html" });
+  response.end("<h1>Not found</h1>");
 }
 
 module.exports = missing;

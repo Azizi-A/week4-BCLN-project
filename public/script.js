@@ -2,18 +2,16 @@ const submitBtn = document.querySelector(".form__button-submit");
 const inputThought = document.querySelector(".form__input-thought");
 const inputAuthor = document.querySelector(".form__input-author");
 const postsList = document.querySelector(".main__article-posts");
-const template = document.querySelector(".template");
+const template = document.querySelector("template");
 
 fetch("/get-post")
   .then(res => {
     if (!res.ok) {
       throw new Error("Server error");
-      return res;
     }
+    return res;
   })
-  .then(res => {
-    res.json();
-  })
+  .then(res => res.json())
   .then(data => {
     postsList.innerHTML = "";
     for (i = 0; i < data.length; i++) {
@@ -37,17 +35,19 @@ fetch("/get-post")
   })
   .catch(err => console.error(err));
 
-submitBtn.addEventListener("submit", event => {
+submitBtn.addEventListener("click", event => {
   event.preventDefault();
-  url = "/submit";
+  // url = "/submit";
+  // console.log(url);
   // arrange form inputs into object
   const data = {};
   data.thought = inputThought.value;
   data.author = inputAuthor.value;
+  console.log(data);
 
   // send post request
-  fetch(url, {
-    method: "POST",
+  fetch("/submit", {
+    method: "post",
     headers: {
       "Content-Type": "application/json",
     },
