@@ -17,10 +17,20 @@
         <fieldset>
           <legend>What's the next line ?</legend>
           <label for="thoughts">I think...</label>
-          <input type="text" id="thoughts" class="form__input-thought" />
+          <input
+            type="text"
+            id="thoughts"
+            class="form__input-thought"
+            placeholder="Write your line here"
+          />
           <label for="author">by:</label>
-          <input type="text" id="author" class="form__input-author" />
-          <button type="submit" class="form__button-submit">submit</button>
+          <input
+            type="text"
+            id="author"
+            class="form__input-author"
+            placeholder="Your pen name"
+          />
+          <button type="submit" class="form__button-submit">Submit</button>
         </fieldset>
       </form>
       <article class="main__article-posts"></article>
@@ -30,7 +40,7 @@
       <article class="template__article">
         <p class="template__article-thought"></p>
         <p class="template__article-author"></p>
-        <button type="button" class="template__button-delete"></button>
+        <button type="button" class="template__button-delete">Delete</button>
       </article>
     </template>
   </body>
