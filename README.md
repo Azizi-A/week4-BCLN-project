@@ -7,6 +7,15 @@ Azizi - Deployment </br>
 Jennifer - User/design </br>
 Amber - Facilitator
 
+# Installing the dependencies 
+After downloading the repo run npm install in your termninal to install all the necessary dependencies. 
+
+## Tools used :wrench:
+- Figma
+- crazy 8s methodology
+- pen and paper 
+- html, css and vanilla javascript 
+
 # Points to keep in mind from our previous SGCs
 - Make co-authored commits
 - Switch pairs every hour 
